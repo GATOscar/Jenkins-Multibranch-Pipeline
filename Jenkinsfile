@@ -19,13 +19,14 @@ pipeline {
               }
             }
  
+
             stage('Third') {
                 when {
                     enviroment name: 'EXECUTE', value: "True"
                 }
-                steps {
-                    sh ' echo "Updating Third Stage" '                    '
-                }
+                steps { 
+                    sh ' echo "updating Third Stage" '
+              }
             }
         }
 }
