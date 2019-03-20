@@ -24,9 +24,7 @@ pipeline {
                     enviroment name: 'EXECUTE', value: "True"
                 }
                 steps {
-                    sh '
-                        echo "Updating Third Stage"
-                    '
+                    sh ' echo "Updating Third Stage" '                    '
                 }
             }
         }
